@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Guard",
+  "version": "1.0",
+  "description": "Blocks distracting websites and replaces them with Sudoku puzzles",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+} 
